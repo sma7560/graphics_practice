@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0.26989722, y: -0.012423411, z: 0.0034822626, w: -0.9628027}
-  m_LocalPosition: {x: -0.086, y: 1.043, z: -1.91}
+  m_LocalPosition: {x: -0.107, y: 1.601, z: -2.723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -762,7 +762,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1937804907}
-  - component: {fileID: 1937804906}
+  - component: {fileID: 1937804908}
+  - component: {fileID: 1937804909}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -770,21 +771,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1937804906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937804905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad982103a3c88cf43932d952d343f3ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointPrefab: {fileID: 947927250583387427, guid: 5e76b41b92ebbcc4b9daac2f50a32d18, type: 3}
-  resolution: 100
-  function: 4
 --- !u!4 &1937804907
 Transform:
   m_ObjectHideFlags: 0
@@ -800,6 +786,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937804908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937804905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0777a27cd6d1745af094c05019f949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 1000
+  function: 4
+  computeShader: {fileID: 7200000, guid: 0884135cab90bbf45b65c5a5595e1834, type: 3}
+  mat: {fileID: 2100000, guid: 72a418b44fda3664bacf6c06499cd765, type: 2}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1937804909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937804905}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad982103a3c88cf43932d952d343f3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointPrefab: {fileID: 947927250583387427, guid: 5e76b41b92ebbcc4b9daac2f50a32d18, type: 3}
+  resolution: 100
+  function: 0
 --- !u!1 &2009811877
 GameObject:
   m_ObjectHideFlags: 0
